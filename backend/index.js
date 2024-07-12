@@ -8,7 +8,10 @@ const userModel = require('./models/user');
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/merncrud", { useNewUrlParser: true, useUnifiedTopology: true })
+// mongoose.connect("mongodb://127.0.0.1:27017/merncrud", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://freenafrancis2000:5TX8EL9QlYxM9FsS@cluster0.iikl9sw.mongodb.net/crud"
+  
+)
   .then(() => {
     console.log('Connected to MongoDB');
   })
