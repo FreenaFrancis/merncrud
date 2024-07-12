@@ -18,7 +18,7 @@ const navigate=useNavigate();
     setPlace(e.target.value);
   };
   useEffect(() => {
-    axios.get(`http://localhost:8000/getUserById/${id}`)
+    axios.get(`https://merncrud-izwt.onrender.com/getUserById/${id}`)
       .then((result) => {
         console.log(result);
         setName(result.data.name);

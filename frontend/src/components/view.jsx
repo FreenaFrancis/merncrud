@@ -7,14 +7,14 @@ function View() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/getuser')
+      .get('https://merncrud-izwt.onrender.com/getuser')
       .then((res) => setUser(res.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handleDelete=(id)=>{
   
-    axios.delete(`http://localhost:8000/deleteuser/${id}`)
+    axios.delete(`https://merncrud-izwt.onrender.com/deleteuser/${id}`)
     .then((res)=>{
       console.log('deleted');
       window.location.reload()

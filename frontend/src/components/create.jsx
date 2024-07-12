@@ -18,7 +18,7 @@ const navigate=useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8000/post', { name, place })
+    axios.post('https://merncrud-izwt.onrender.com/post', { name, place })
       .then((res) => {
     
         console.log(res);
